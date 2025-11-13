@@ -6,8 +6,8 @@ import './Login.css';
 
 function Login({ onLoginSuccess }) {
   // Default to the defence user for easier testing
-  const [cameraId, setCameraId] = useState('228594f4-edca-4027-9f8e-54c995240bc5');
-  const [token, setToken] = useState('8aaea353-fca3-45dc-93f2-213e7a798980');
+  const [cameraId, setCameraId] = useState('a93479da-d106-481d-941c-dc1184fa69cc');
+  const [token, setToken] = useState('8af2ad37-da96-455e-880f-1778bfd6658d');
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
@@ -17,7 +17,7 @@ function Login({ onLoginSuccess }) {
     setIsLoading(true);
 
     try {
-      const response = await fetch('http://localhost:3001/api/login', {
+      const response = await fetch('http://localhost:5174/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ function Login({ onLoginSuccess }) {
   return (
     <div className="login-container">
       <div className="login-box">
-        <h1 className="login-title">TEAM HyperNova</h1>
+        <h1 className="login-title">TEAM SuperNova</h1>
         <form onSubmit={handleLogin}>
           <div className="input-group">
             <label htmlFor="camera-id">Camera ID</label>

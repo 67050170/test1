@@ -95,7 +95,7 @@ const useSocket = (camId, enabled) => {
 
     // Connect to the Socket.IO server
     // Make sure VITE_SOCKET_URL is defined in your .env file (e.g., VITE_SOCKET_URL=http://localhost:3001)
-    const socketInstance = io(import.meta.env.VITE_SOCKET_URL || 'http://localhost:3001');
+    const socketInstance = io(import.meta.env.VITE_SOCKET_URL || 'http://localhost:5174');
 
     socketInstance.on('connect', () => {
       console.log('✅ Socket connected');
@@ -166,7 +166,7 @@ function DefenceDashboard({ onLogout }) {
 
   // --- Real-time Data Integration ---
   // This is the camera ID for the defence dashboard
-  const camId = '228594f4-edca-4027-9f8e-54c995240bc5';
+  const camId = 'a93479da-d106-481d-941c-dc1184fa69cc';
   // Always use the real socket connection
   const { realtimeData } = useSocket(camId, true);
 
