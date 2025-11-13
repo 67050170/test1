@@ -31,13 +31,13 @@ app.use(express.static(path.join(__dirname, 'dist')));
 const SECRET_TOKEN_AI = process.env.SECRET_TOKEN_AI;
 
 // ข้อมูลผู้ใช้สำหรับล็อกอิน (ย้ายมาจาก Frontend)
-const USERS = {
-  'a8dd6071-9a67-49f6-abdf-e97239e46e13': {
-    token: '7d705f67-47e6-479c-972b-5d0d37784bcd',
+// const USERS = {
+  '9d7d4113-7a56-4298-8fb2-c71c4bcc0187': {
+    token: 'ff8b6d81-bbf6-40b2-90de-5e392d77e348',
     dashboard: 'offence' // offence dashboard
   },
-  '228594f4-edca-4027-9f8e-54c995240bc5': {
-    token: '8aaea353-fca3-45dc-93f2-213e7a798980',
+  'a93479da-d106-481d-941c-dc1184fa69cc': {
+    token: '8af2ad37-da96-455e-880f-1778bfd6658d',
     dashboard: 'defence' // defence dashboard
   }
 };
@@ -151,7 +151,7 @@ app.get(/^(?!\/api).*/, (req, res) => {
 // --- Server Start ---
 
 // 6. Start the server using the http instance
-const PORT = 3001;
+const PORT = 5174;
 server.listen(PORT, () => {
   console.log(`🚀 Server กำลังทำงานอยู่ที่ http://localhost:${PORT}`);
 });
