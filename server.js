@@ -151,7 +151,7 @@ app.get(/^(?!\/api).*/, (req, res) => {
 // --- Server Start ---
 
 // 6. Start the server using the http instance
-const PORT = 5174;
+const PORT = 3001;
 server.listen(PORT, () => {
   console.log(`🚀 Server กำลังทำงานอยู่ที่ http://localhost:${PORT}`);
 });

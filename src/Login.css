@@ -6,16 +6,16 @@
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color: #1a1a1a; /* Dark background */
+  background-color: #000000; /* Dark background */
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .login-box {
-  background-color: #242424;
+  background-color: #ce4cab;
   padding: 40px 50px;
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 25px rgb(202, 38, 231);
   width: 100%;
   max-width: 450px;
   text-align: center;
@@ -26,7 +26,7 @@
   margin-bottom: 30px;
   font-size: 28px;
   font-weight: 700;
-  color: #61dafbaa; /* React color */
+  color: #ebf83be9; /* React color */
 }
 
 .input-group {
@@ -38,7 +38,7 @@
   display: block;
   margin-bottom: 8px;
   font-size: 14px;
-  color: #a0a0a0;
+  color: #fbf6f6;
 }
 
 .input-group input {
